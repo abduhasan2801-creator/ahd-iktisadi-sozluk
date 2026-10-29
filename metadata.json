@@ -1,0 +1,6 @@
+{
+  "name": "AHD İktisadi Sözlük",
+  "description": "قاموس المصطلحات الاقتصادية التفاعلي تركي - عربي وعربي - تركي مع شروح تفصيلية ونطق صوتي",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

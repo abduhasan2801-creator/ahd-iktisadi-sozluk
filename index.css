@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-brand: 'Cinzel', serif;
+  --font-arabic: 'Cairo', system-ui, sans-serif;
+  --font-display: 'Outfit', 'Cairo', system-ui, sans-serif;
+}
+
+:root {
+  --gold-primary: #f59e0b;
+  --gold-shiny-start: #ffe066;
+  --gold-shiny-mid: #d4af37;
+  --gold-shiny-end: #aa771c;
+  --turkish-red: #e30a17;
+  --turkish-red-dark: #b80510;
+}
+
+/* Shiny metallic gold gradient text */
+.text-gold-metallic {
+  background: linear-gradient(135deg, #fff2a6 0%, #ffd700 25%, #d4af37 50%, #f3e5ab 75%, #aa771c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.45));
+}
+
+.text-gold-glow {
+  text-shadow: 0 0 16px rgba(245, 158, 11, 0.45), 0 0 32px rgba(212, 175, 55, 0.25);
+}
+
+.border-gold-glow {
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #ffd700 0%, #d4af37 50%, #aa771c 100%);
+}
+
+.bg-gold-gradient-subtle {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.12) 0%, rgba(212, 175, 55, 0.05) 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.5);
+}
